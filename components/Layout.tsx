@@ -14,7 +14,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({
   children,
   home = false,
-  name = 'Your Name',
+  name = 'Default name',
   imageSource = '/images/abott@adorable.io.png',
 }) => {
   return (

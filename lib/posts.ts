@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import remark from 'remark';
-import html from 'remark-html';
+const html = require('remark-html');
 
 export interface PostData {
   id: string;
@@ -38,7 +38,6 @@ export const getSortedPostsData = () => {
 };
 
 export const getAllPostIds = () => {
-  console.log('postsDirectory', postsDirectory);
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map((fileName) => {
     return {

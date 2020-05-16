@@ -28,8 +28,14 @@ const Home: React.FC<HomeProps> = ({ avatar_url, bio, name, allPostsData }) => {
       <section className={utilStyles.headingMd}>
         <p>{bio}</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href='https://nextjs.org/learn'>our Next.js tutorial</a>.)
+          This was built following{' '}
+          <a
+            target='blank'
+            href='https://nextjs.org/learn/basics/create-nextjs-app'
+          >
+            Next.js docs
+          </a>
+          .
         </p>
       </section>
 
